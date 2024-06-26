@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "nodemon index.ts ",
+    "build": "npx tsc",
     "start": "node --experimental-specifier-resolution=node ./api/index.js",
     "dev": "nodemon index.ts"
   },
