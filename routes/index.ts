@@ -1,10 +1,10 @@
 import { Router, Request, Response } from 'express';
-import { createUser } from '../controllers/index.js';
+import { createUser, login } from '../controllers/index.js';
 
 const route = Router()
 
 route.post("/signup", createUser)
 
-route.post("/login")
+route.post("/login" , login)
 
 export default route

@@ -6,6 +6,7 @@ import mongoose from 'mongoose';
 export const getProducts = async (req: SecureRequest, res: Response) => {
     try {
         const id = req.user?.id
+        console.log('get products')
         const products = await Product.find({ addedBy: id })
         res.status(200).json({
             success: true,
