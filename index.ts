@@ -14,6 +14,10 @@ app.use(cors())
 
 app.use(express.json())
 
+app.get("/", (req: Request, res: Response) => {
+    res.send("My Server is running")
+})
+
 app.use("/api", route)
 app.use("/api/auth", validateUser, secuteRoute)
 
